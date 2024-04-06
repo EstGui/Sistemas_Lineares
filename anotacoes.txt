@@ -1,0 +1,2 @@
+escalonamento / metodo de gauss
+gauss jacobi
