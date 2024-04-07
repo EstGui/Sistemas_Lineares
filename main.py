@@ -7,8 +7,11 @@ def registrarMatriz():
     linha = int(input('Digite a quantidade de linhas: '))
     coluna = int(input('Digite a quantidade de colunas: '))
 
-    matriz = [[]] * linha
+    matriz = []
     termoInd = []
+
+    for c in range(linha):
+        matriz.append([])
 
     print('')
     for l in range(linha):
@@ -42,7 +45,6 @@ def exibeResultado(resultado):
 def gauss(matriz, b):
     nl = len(matriz)
     nc = len(matriz[0])
-    
     # D
     for i in range(nl - 1):
         for j in range(i + 1, nl):
@@ -104,7 +106,7 @@ Selecione a opção desejada: """))
 
             exibeResultado(resultado)
 
-            exe = continuar()
+            exe = True if continuar() else False
 
         elif not opt:
             break
