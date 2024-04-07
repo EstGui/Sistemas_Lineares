@@ -7,11 +7,8 @@ def registrarMatriz():
     linha = int(input('Digite a quantidade de linhas: '))
     coluna = int(input('Digite a quantidade de colunas: '))
 
-    matriz = []
+    matriz = [[]] * linha
     termoInd = []
-
-    for c in range(linha):
-        matriz.append([])
 
     print('')
     for l in range(linha):
